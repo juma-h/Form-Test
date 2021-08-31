@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> A-S Survey Form</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <header>
+            <h1 style="color:rgb(236, 236, 238)" id="title">Astronaut Survey Form</h1>
+            <p style="color:rgb(236, 236, 238)" id="description">Hi there! This is a short survey form to be filled after the space simulation. To help us improve :)</p>
+        </header>
+        <div class="form">
+            <form id="survey-form" action=" ">
+                <div class="form-survey">
+                    <label id="name-label" for="name">What should we call you:</label> <br>
+                    <input type="text" name="name" placeholder="Enter your Name" id="name" required>
+                </div>
+                <br>
+                <div class="form-survey">
+                    <label id="email-label" for="email">What is your email:</label> <br>
+                    <input type="email" name="email" placeholder="Enter your Email" id="email" required>
+                </div>
+                <br>
+                <div class="form-survey">
+                    <label id="number-label" for="number">How old are you?</label> <br>
+                    <input type="number" name="number" min="18" max="40" placeholder="Age" id="number" required>
+                </div>
+
+                <div class="form-survey">
+                    <p>Gender:</p>
+                    <select name="gender" id="dropdown">
+                    <option disabled selected value>Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-Binary">Non-Binary</option>
+                    <option value="Prefer not to  say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                 </select>
+                </div>
+
+                <div class="form-survey">
+                    <p>On a scale of 1-5, how would you rate your experience?</p> <br>
+                    <input type="radio" id="" name="rate-exp" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" id="" name="rate-exp" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" id="" name="rate-exp" value="3">
+                    <label for="3">3</label>
+                    <input type="radio" id="" name="rate-exp" value="4">
+                    <label for="4">4</label>
+                    <input type="radio" id="" name="rate-exp" value="5">
+                    <label for="5">5</label>
+                </div>
+
+                <div class="form-survey"></div>
+                <p>What was your favourite Interplanetary Phase?</p>
+                <label><input name="favourite" value="the-launch-phase" type="checkbox" class="input-checkbox"/> The Launch Phase</label><br>
+                <label><input name="favourite" value=" the-cruise-phase" type="checkbox" class="input-checkbox" /> The Cruise Phase</label><br>
+                <label><input name="favourite" value="the-encounter-phase" type="checkbox" class="input-checkbox"/> The Encounter Phase</label><br>
+                <label><input name="favourite" value="the-extended-operations-phase" type="checkbox" class="input-checkbox"/> The Extended Operations Phase</label>
+
+                <div class="form-group">
+                    <p>Tell us what you think on what we can improve on.</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-survey">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
